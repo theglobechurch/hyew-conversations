@@ -1,0 +1,32 @@
+.photo__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  
+  img {
+    display: block;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.photo__gridBtn {
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.photo__footer {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 4px;
+}

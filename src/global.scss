@@ -9,3 +9,24 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+.btn {
+  padding: 10px;
+  border-radius: 20px;
+  min-width: 210px;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+  &--primary {
+    background-color: #cbdea2;
+  }
+
+  &--secondary {
+    background-color: #a9a6de;
+  }
+
+  &--translucent {
+    
+  }
+}

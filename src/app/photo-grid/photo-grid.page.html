@@ -1,0 +1,13 @@
+<ion-content padding>
+
+  <div class="photo-grid">
+
+    <div *ngFor="let photo of photos">
+      <button class="" (click)="btnPhoto(photo.id)" class="photo-grid__button">
+        <img src="/assets/photos/{{ photo.filename }}" alt="{{ photo.alt }}" />
+      </button>
+    </div>
+
+  </div>
+
+</ion-content>

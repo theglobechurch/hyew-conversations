@@ -1,0 +1,14 @@
+[
+  {
+    "copy": "Which photos represent your hopes?",
+    "numberOfPhotos": 3
+  },
+  {
+    "copy": "What worries you about this city?",
+    "numberOfPhotos": 2
+  },
+  {
+    "copy": "What is the solution?",
+    "numberOfPhotos": 1
+  }
+]

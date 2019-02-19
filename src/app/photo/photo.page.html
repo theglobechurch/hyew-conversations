@@ -1,0 +1,25 @@
+<ion-content>
+
+  <div class="photo__img">
+    <img src="/assets/photos/{{ photo.filename }}" alt="{{ photo.alt }}" />
+  </div>
+
+  <button class="btn btn--primary photo__gridBtn" [routerLink]="['/photo-grid']">
+    Photo Grid
+  </button>
+
+  <div class="photo__footer">
+    <div class="">
+      <button class="btn btn--secondary" (click)="btnChange('previous')">Flick back</button>
+      <button class="btn btn--secondary" (click)="btnAdd()">Add</button>
+      <button class="btn btn--secondary" (click)="btnChange('next')">Flick forwards</button>
+    </div>
+
+    <div class="">
+      {{ question.copy }}<br />
+      Pick {{ n2wConverter.toWords(question.numberOfPhotos) }}
+    </div>
+  </div>
+
+
+</ion-content>

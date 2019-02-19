@@ -4,6 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'photo', loadChildren: './photo/photo.module#PhotoPageModule' },
+  { path: 'review', loadChildren: './review/review.module#ReviewPageModule' },
+  { path: 'ending', loadChildren: './ending/ending.module#EndingPageModule' },
+  { path: 'photo-grid', loadChildren: './photo-grid/photo-grid.module#PhotoGridPageModule' },
 ];
 
 @NgModule({
