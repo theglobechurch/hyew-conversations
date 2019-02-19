@@ -22,6 +22,24 @@
   left: 20px;
 }
 
+.photo__selected {
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  span {
+    background-color: #cc2e3b;
+    border-radius: 50%;
+    color: white;
+    height: 16px;
+    width: 16px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .photo__footer {
   z-index: 1;
   position: absolute;

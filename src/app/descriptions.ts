@@ -6,5 +6,6 @@ export class Photo {
 
 export class Question {
   copy: string;
+  discussion: string;
   numberOfPhotos: number;
 }

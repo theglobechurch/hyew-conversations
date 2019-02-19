@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService, PhotoService, QuestionService } from '../data.service';
 import n2w from 'number-to-words';
-import { tick } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-photo',
@@ -21,8 +20,7 @@ export class PhotoPage implements OnInit {
     private questionService: QuestionService,
     private photoService: PhotoService,
     public data:DataService
-  ) {
-  }
+  ) { }
 
   ngOnInit() {
     this.getPhotos();
@@ -37,7 +35,6 @@ export class PhotoPage implements OnInit {
       this.question = this.questions[questionId];
       this.questionId = questionId;
     });
-
   }
 
   getPhotos(): void {
@@ -46,10 +43,20 @@ export class PhotoPage implements OnInit {
 
   getQuestions(): void {
     this.questions = this.questionService.getQuestions();
+    for(let i:number = 0; i < this.questions.length; i++) {
+      this.data.userAnswers.push([]);
+    }
   }
 
   btnAdd() {
-    // this.data.changeQuestion(1);
+    const maxPhotos = this.questions[this.questionId].numberOfPhotos;
+    this.data.updateResponses(this.question, this.questionId, this.photoId);
+    
+    if (this.data.userAnswers[this.questionId].length >= maxPhotos) {
+      console.log('time to ask questions');
+
+      // nav to review
+    }
   }
 
   btnChange(direction:string = "next") {

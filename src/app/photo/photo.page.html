@@ -8,10 +8,19 @@
     Photo Grid
   </button>
 
+  <div class="photo__selected">
+    <span>
+      {{ data.userAnswers[questionId].length }}
+    </span>
+  </div>
+
   <div class="photo__footer">
     <div class="">
       <button class="btn btn--secondary" (click)="btnChange('previous')">Flick back</button>
-      <button class="btn btn--secondary" (click)="btnAdd()">Add</button>
+      <button class="btn btn--secondary" (click)="btnAdd()">
+        <span *ngIf="data.userAnswers[questionId].indexOf(photoId) === -1">Add</span>
+        <span *ngIf="data.userAnswers[questionId].indexOf(photoId) >= 0">Remove</span>
+      </button>
       <button class="btn btn--secondary" (click)="btnChange('next')">Flick forwards</button>
     </div>
 

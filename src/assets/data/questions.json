@@ -1,14 +1,17 @@
 [
   {
     "copy": "Which photos represent your hopes?",
+    "discussion": "What is about these three images that point you to hope?",
     "numberOfPhotos": 3
   },
   {
     "copy": "What worries you about this city?",
+    "discussion": "Where are your worries in each of these images?",
     "numberOfPhotos": 2
   },
   {
     "copy": "What is the solution?",
+    "discussion": "Why this one image?",
     "numberOfPhotos": 1
   }
 ]
