@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PhotoService } from '../photo.service';
-import { DataService } from '../data.service';
+import { DataService, PhotoService } from '../data.service';
 
 @Component({
   selector: 'app-photo-grid',
@@ -13,8 +12,8 @@ export class PhotoGridPage implements OnInit {
   photo: number;
 
   constructor(
-    private router: Router,
     private photoService: PhotoService,
+    private router: Router,
     public data:DataService
   ) {
   }

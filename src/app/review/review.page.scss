@@ -1,0 +1,35 @@
+.review {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow: auto;
+  height: 100vh;
+  padding: 25px;
+
+  &__image {
+    margin: 0 25px;
+  }
+
+  img {
+    height: 80vh;
+    width: auto;
+    max-width: none;
+  }
+}
+
+.question {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 4px;
+
+  ion-icon {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 24px;
+  }
+}

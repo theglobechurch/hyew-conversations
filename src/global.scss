@@ -12,11 +12,18 @@
 
 .btn {
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 22px;
   min-width: 210px;
-  height: 40px;
+  height: 44px;
   text-transform: uppercase;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & ion-icon {
+    font-size: 20px;
+  }
   
   &--primary {
     background-color: #cbdea2;
@@ -28,5 +35,10 @@
 
   &--translucent {
     
+  }
+
+  &--round {
+    width: 44px;
+    min-width: auto;
   }
 }

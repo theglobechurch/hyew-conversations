@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService, PhotoService, QuestionService } from '../data.service';
 import n2w from 'number-to-words';
 
@@ -17,8 +18,9 @@ export class PhotoPage implements OnInit {
   n2wConverter = n2w;
 
   constructor(
-    private questionService: QuestionService,
     private photoService: PhotoService,
+    private questionService: QuestionService,
+    private router: Router,
     public data:DataService
   ) { }
 
@@ -53,9 +55,9 @@ export class PhotoPage implements OnInit {
     this.data.updateResponses(this.question, this.questionId, this.photoId);
     
     if (this.data.userAnswers[this.questionId].length >= maxPhotos) {
-      console.log('time to ask questions');
-
-      // nav to review
+      this.router.navigate(['/review']);
+    } else {
+      this.btnChange("next");
     }
   }
 
