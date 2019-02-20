@@ -1,8 +1,8 @@
 .photo-grid {
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
+  padding: 20px;
 
   &__button {
     width: 100%;
@@ -23,4 +23,13 @@
       width: 100%;
     }
   }
+}
+
+.photo__footer {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 4px;
 }

@@ -1,4 +1,4 @@
-<ion-content padding>
+<ion-content>
 
   <div class="photo-grid">
 
@@ -8,6 +8,14 @@
       </button>
     </div>
 
+  </div>
+
+  <div class="photo__footer">
+    
+    <div class="">
+      {{ question.copy }}<br />
+      Pick {{ n2wConverter.toWords(question.numberOfPhotos) }}
+    </div>
   </div>
 
 </ion-content>
