@@ -1,5 +1,7 @@
 {
   "name": "hyew",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
