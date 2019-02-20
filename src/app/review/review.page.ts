@@ -42,8 +42,15 @@ export class ReviewPage implements OnInit {
   }
 
   btnNextQuestion() {
-    this.data.changeQuestion(this.questionId + 1);
-    this.router.navigate(['/photo']);
+    const nextQuestionId = this.questionId + 1;
+    const maxQuestions = this.questions.length - 1; // zero indexed
+    
+    if (nextQuestionId <= maxQuestions) {
+      this.data.changeQuestion(nextQuestionId);
+      this.router.navigate(['/photo']);
+    } else {
+      this.router.navigate(['/ending']);
+    }
   }
 
 }
