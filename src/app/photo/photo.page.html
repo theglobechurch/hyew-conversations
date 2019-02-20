@@ -12,6 +12,11 @@
     <span>
       {{ data.userAnswers[questionId].length }}
     </span>
+
+    <div class="photo__selected__imgs" *ngFor="let selectedPhotos of data.userAnswers[questionId]">
+      <img src="/assets/photos/{{ photos[selectedPhotos].filename }}" alt="{{ photos[selectedPhotos].alt }}" />
+    </div>
+
   </div>
 
   <div class="photo__footer">

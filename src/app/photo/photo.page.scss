@@ -37,6 +37,26 @@
     font-size: 12px;
     display: flex;
     justify-content: center;
+    position: absolute;
+    z-index: 1;
+    right: -5px;
+    top: -5px;
+  }
+
+  &__imgs {
+    height: 50px;
+    position: relative;
+    width: 50px;
+
+    img {
+      display: block;
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
   }
 }
 
