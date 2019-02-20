@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService, PhotoService, QuestionService } from '../data.service';
+import { Photo, Question } from '../descriptions';
 import n2w from 'number-to-words';
 
 @Component({
@@ -11,9 +12,9 @@ import n2w from 'number-to-words';
 export class PhotoPage implements OnInit {
   photos;
   questions;
-  photo: [];
+  photo: Photo;
   photoId: number = 0;
-  question: {};
+  question: Question;
   questionId: number = 0;
   n2wConverter = n2w;
 
