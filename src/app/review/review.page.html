@@ -6,8 +6,10 @@
       <ion-icon name="arrow-back"></ion-icon>
     </button>
 
-    <div *ngFor="let i of answers[questionId]" class="review__image">
-      <img src="/assets/photos/{{ photos[i].filename }}" alt="{{ photos[i].alt }}" />
+    <div class="review__images">
+      <div *ngFor="let i of answers[questionId]" class="review__image">
+        <img src="/assets/photos/{{ photos[i].filename }}" alt="{{ photos[i].alt }}" />
+      </div>
     </div>
 
     <button class="review__btn btn btn--round btn--primary" (click)="btnNextQuestion()">

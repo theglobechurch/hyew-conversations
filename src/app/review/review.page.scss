@@ -1,20 +1,26 @@
 .review {
-  display: flex;
   align-items: center;
-  width: 100vw;
-  white-space: nowrap;
-  overflow-y: hidden;
-  overflow: auto;
+  display: flex;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr auto 1fr;
   height: 100vh;
-  padding: 25px;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 100vw;
 
-  &__image {
-    margin: 0 25px;
+  &__images {
+    display: flex;
+    height: 80vw;
+    overflow: auto hidden;
   }
 
-  img {
+  &__image {
     height: 80vh;
-    width: auto;
-    max-width: none;
+    padding: 0 10px;
+
+    img {
+      height: 80vw;
+      max-width: initial;
+    }
   }
 }
