@@ -10,7 +10,6 @@ import { Photo } from '../descriptions';
 
 export class HomePage {
   photos: Photo[];
-  photo: Photo;
 
   constructor(
     private photoService: PhotoService

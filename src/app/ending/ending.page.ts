@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
-import { DataService } from '../data.service';
+import { PhotoService, DataService } from '../data.service';
+import { Photo } from '../descriptions';
 
 @Component({
   selector: 'app-ending',
@@ -9,26 +10,21 @@ import { DataService } from '../data.service';
   styleUrls: ['./ending.page.scss'],
 })
 export class EndingPage implements OnInit {
+  photos: Photo[];
 
   constructor(
-    private alertController: AlertController,
+    private photoService: PhotoService,
     private router: Router,
     public data:DataService
   ) { }
 
   ngOnInit() {
+    this.getPhotos();
   }
 
-  // ToDo: Trigger calendar opening
-  // async btnMeet() {
-  //   const alert = await this.alertController.create({
-  //     header: 'Meet Up',
-  //     message: 'Get your diary!',
-  //     buttons: ['OK']
-  //   });
-
-  //   await alert.present();
-  // }
+  getPhotos(): void {
+    this.photos = this.photoService.getPhotos();
+  }
 
   btnEnd() {
     // Forget everything
