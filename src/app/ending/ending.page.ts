@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { PhotoService, DataService } from '../data.service';
 import { Photo } from '../descriptions';
@@ -29,6 +28,7 @@ export class EndingPage implements OnInit {
   btnEnd() {
     // Forget everything
     this.data.userAnswers = [];
+    this.data.changeQuestion(0);
 
     // And restart
     this.router.navigate(['/home']);
