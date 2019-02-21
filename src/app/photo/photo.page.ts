@@ -51,6 +51,10 @@ export class PhotoPage implements OnInit {
     }
   }
 
+  btnOi(e) {
+    alert(e);
+  }
+
   btnAdd() {
     const maxPhotos = this.questions[this.questionId].numberOfPhotos;
     this.data.updateResponses(this.question, this.questionId, this.photoId);
