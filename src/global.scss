@@ -11,15 +11,16 @@
 @import '~@ionic/angular/css/flex-utils.css';
 
 .btn {
-  padding: 10px;
-  border-radius: 22px;
-  min-width: 210px;
-  height: 44px;
-  text-transform: uppercase;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  border-radius: 22px;
+  display: flex;
+  font-weight: bold;
+  height: 44px;
+  justify-content: center;
+  min-width: 210px;
+  outline: none;
+  padding: 10px;
+  text-transform: uppercase;
 
   & ion-icon {
     font-size: 20px;

@@ -1,11 +1,17 @@
 <ion-content>
-  <h1>Have you ever <em>wondered?</em></h1>
+  <div class="backgroundImgs">
+    <img *ngFor="let photo of photos.slice(0,4)" src="/assets/photos/{{ photo.filename }}" alt="{{ photo.alt }}" />
+  </div>
 
-  <h3><em>3</em> Questions</h3>
-  <h3><em>48</em> Photos</h3>
-  <h3><em>∞</em> Conversations</h3>
+  <div class="foregroundCopy">
+    <h1>Have you ever <em>wondered?</em></h1>
 
-  <button class="btn btn--primary" [routerLink]="['/photo']">
-    Get Started
-  </button>
+    <h3><em>3</em> Questions</h3>
+    <h3><em>48</em> Photos</h3>
+    <h3><em>∞</em> Conversations</h3>
+
+    <button class="btn btn--primary" [routerLink]="['/photo']">
+      Get Started
+    </button>
+  </div>
 </ion-content>
