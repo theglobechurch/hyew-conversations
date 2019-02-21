@@ -1,0 +1,29 @@
+.foregroundCopy {
+  background-color: rgba(0,0,0, 0.2);
+  color: white;
+}
+
+h1 {
+  border-bottom: 1px solid white;
+  padding: 0 50px 50px;
+  position: relative;
+  font-weight: bold;
+
+  em {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+
+  em {
+    display: block;
+    font-size: 50px;
+    font-style: normal;
+  }
+}
