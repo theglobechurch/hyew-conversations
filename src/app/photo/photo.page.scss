@@ -16,10 +16,16 @@
 }
 
 .photo__gridBtn {
-  z-index: 1;
+  background: none;
+  color: white;
+  font-size: 52px;
+  left: 10px;
+  opacity: .75;
+  outline: none;
+  padding: 0;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  z-index: 1;
 }
 
 .photo__selected {
@@ -58,13 +64,4 @@
       width: 100%;
     }
   }
-}
-
-.photo__footer {
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.4);
-  padding: 4px;
 }

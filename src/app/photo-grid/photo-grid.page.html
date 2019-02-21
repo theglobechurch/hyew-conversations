@@ -10,11 +10,12 @@
 
   </div>
 
-  <div class="photo__footer">
-    
-    <div class="">
-      {{ question.copy }}<br />
-      Pick {{ n2wConverter.toWords(question.numberOfPhotos) }}
+  <div class="screenFooter">
+    <div class="screenFooter__question">
+      {{ question.copy }}
+      <span>
+        Pick {{ n2wConverter.toWords(question.numberOfPhotos) }}
+      </span>
     </div>
   </div>
 

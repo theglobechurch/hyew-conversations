@@ -4,8 +4,8 @@
     <img src="/assets/photos/{{ photo.filename }}" alt="{{ photo.alt }}" />
   </div>
 
-  <button class="btn btn--primary photo__gridBtn" [routerLink]="['/photo-grid']">
-    Photo Grid
+  <button class="photo__gridBtn" [routerLink]="['/photo-grid']">
+    <ion-icon name="apps"></ion-icon>
   </button>
 
   <div class="photo__selected">
@@ -19,8 +19,8 @@
 
   </div>
 
-  <div class="photo__footer">
-    <div class="">
+  <div class="screenFooter">
+    <div class="screenFooter__buttonGroup">
       <button class="btn btn--secondary btn--round" (click)="btnChange('previous')">
         <ion-icon name="arrow-back"></ion-icon>
       </button>
@@ -33,9 +33,9 @@
       </button>
     </div>
 
-    <div class="">
-      {{ question.copy }}<br />
-      Pick {{ n2wConverter.toWords(question.numberOfPhotos) }}
+    <div class="screenFooter__question">
+      {{ question.copy }}
+      <span>Pick {{ n2wConverter.toWords(question.numberOfPhotos) }}</span>
     </div>
   </div>
 

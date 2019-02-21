@@ -2,13 +2,33 @@
 @import '~@ionic/angular/css/core.css';
 @import '~@ionic/angular/css/normalize.css';
 @import '~@ionic/angular/css/structure.css';
-@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/typograph\y.css';
 
 @import '~@ionic/angular/css/padding.css';
 @import '~@ionic/angular/css/float-elements.css';
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+@font-face {
+  font-family: 'raleway';
+  src: url('/assets/font/raleway-bold-webfont.woff2') format('woff2'),
+       url('/assets/font/raleway-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url('/assets/font/raleway-regular-webfont.woff2') format('woff2'),
+       url('/assets/font/raleway-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, button, input {
+  font-family: Raleway, sans-serif;
+}
 
 .btn {
   align-items: center;
@@ -41,5 +61,41 @@
   &--round {
     width: 44px;
     min-width: auto;
+  }
+}
+
+
+.screenFooter {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 4px;
+
+  .icon {
+    font-size: 26px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: -15px;
+  }
+
+  &__buttonGroup {
+    align-items: center;
+    display: flex;
+    margin-top: -26px;
+    justify-content: space-around;
+  }
+
+  &__question {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 4px;
+
+    span {
+      display: block;
+      font-weight: normal;
+    }
   }
 }
