@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService, PhotoService, QuestionService } from '../data.service';
-import { Photo } from '../descriptions';
+import { Question, Topic, Photo } from '../descriptions';
 
 @Component({
   selector: 'app-review',
@@ -10,8 +10,9 @@ import { Photo } from '../descriptions';
 })
 export class ReviewPage implements OnInit {
   answers: any[] = this.data.userAnswers;
-  question;
-  questions;
+  topics: Topic[];
+  question: Question;
+  questions: Question[];
   questionId: number = 0;
   photos: Photo[];
 
@@ -38,7 +39,8 @@ export class ReviewPage implements OnInit {
   }
 
   getQuestions(): void {
-    this.questions = this.questionService.getQuestions();
+    this.topics = this.questionService.getQuestions();
+    this.questions = this.topics[this.data.routeId].questions;
   }
 
   btnNextQuestion() {

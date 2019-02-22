@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService, PhotoService, QuestionService } from '../data.service';
-import { Photo, Question } from '../descriptions';
+import { Photo, Question, Topic } from '../descriptions';
 import n2w from 'number-to-words';
 
 @Component({
@@ -13,6 +13,7 @@ export class PhotoGridPage implements OnInit {
   photos: Photo[];
   questions: Question[];
   question: Question;
+  topics: Topic[];
   photo: number;
   n2wConverter = n2w;
 
@@ -39,7 +40,8 @@ export class PhotoGridPage implements OnInit {
   }
 
   getQuestions(): void {
-    this.questions = this.questionService.getQuestions();
+    this.topics = this.questionService.getQuestions();
+    this.questions = this.topics[this.data.routeId].questions;
   }
 
   btnPhoto(id: number) {
