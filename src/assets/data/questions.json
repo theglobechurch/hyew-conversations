@@ -1,17 +1,86 @@
 [
   {
-    "copy": "Which photos represent your hopes?",
-    "discussion": "What is about these three images that point you to hope?",
-    "numberOfPhotos": 3
+    "name": "Purpose",
+    "icon": "bulb",
+    "questions": [
+      {
+        "copy": "Which images represent what you think makes life worth living?",
+        "discussion": "What is it in these images that makes life worth living?",
+        "numberOfPhotos": 3
+      },
+      {
+        "copy": "What expresses your frustration or disappointment in life?",
+        "discussion": "Where are your frustrations and disappointments in each of these images?",
+        "numberOfPhotos": 2
+      },
+      {
+        "copy": "What represents your purpose for life?",
+        "discussion": "Why this one image?",
+        "numberOfPhotos": 1
+      }
+    ],
+    "followup": {
+      "intro": "Here is one thing that Jesus said about life…",
+      "passage": {
+        "text": "Come to me, all you who are weary and burdened, and I will give you rest.",
+        "ref": "Matthew 11:28"
+      }
+    }
   },
   {
-    "copy": "What worries you about this city?",
-    "discussion": "Where are your worries in each of these images?",
-    "numberOfPhotos": 2
+    "name": "Spirituality",
+    "icon": "radio-button-off",
+    "questions": [
+      {
+        "copy": "Which images represent what you think about God?",
+        "discussion": "What is about these three images that point you to hope?",
+        "numberOfPhotos": 3
+      },
+      {
+        "copy": "What makes you doubt God?",
+        "discussion": "Where are your worries in each of these images?",
+        "numberOfPhotos": 2
+      },
+      {
+        "copy": "Choose one image that makes you want to know God more…",
+        "discussion": "Why this one image?",
+        "numberOfPhotos": 1
+      }
+    ],
+    "followup": {
+      "intro": "Christians believe that God reveals himself…",
+      "passage": {
+        "text": "No one has ever seen God, but the one and only Son, who is himself God and is in closest relationship with the Father, has made him known.",
+        "ref": "John 1:18"
+      }
+    } 
   },
   {
-    "copy": "What is the solution?",
-    "discussion": "Why this one image?",
-    "numberOfPhotos": 1
+    "name": "Identity",
+    "icon": "finger-print",
+    "questions": [
+      {
+        "copy": "Which images represent you as a person?",
+        "discussion": "Where do you see yourself in each of these images?",
+        "numberOfPhotos": 3
+      },
+      {
+        "copy": "Which images represent your frustrations with yourself?",
+        "discussion": "What is it about these three images?",
+        "numberOfPhotos": 2
+      },
+      {
+        "copy": "What's your hope for your future?",
+        "discussion": "Why this one image?",
+        "numberOfPhotos": 1
+      }
+    ],
+    "followup": {
+      "intro": "Being created makes a massive difference to our sense of identity…",
+      "passage": {
+        "text": "So God created mankind in his own image, in the image of God he created them; male and female he created them.",
+        "ref": "Genesis 1:27"
+      }
+    }
   }
 ]

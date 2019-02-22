@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import PhotoData from '../assets/data/photos.json';
 import QuestionData from '../assets/data/questions.json';
-import { Photo, Question } from './descriptions';
+import { Photo, Topic, Question } from './descriptions';
 
 @Injectable()
 export class DataService {
@@ -10,6 +10,7 @@ export class DataService {
   private questionSource = new BehaviorSubject(0);
 
   public userAnswers = [];
+  public routeId:number = 0;
 
   currentPhoto = this.photoSource.asObservable();
   currentQuestion = this.questionSource.asObservable();
@@ -22,6 +23,11 @@ export class DataService {
 
   changeQuestion(questionId: number) {
     this.questionSource.next(questionId)
+  }
+
+  changeRoute(r: number) {
+    this.routeId = r;
+    this.changeQuestion(0);
   }
 
   updateResponses(question, questionId: number, photoId: number) {
@@ -55,7 +61,7 @@ export class PhotoService {
 export class QuestionService {
   constructor() {}
 
-  getQuestions(): Question[] {
+  getQuestions(): Topic[] {
     return QuestionData
   }
 }

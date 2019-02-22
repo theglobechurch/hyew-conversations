@@ -6,12 +6,17 @@
   <div class="foregroundCopy">
     <h1>Have you ever <em>wondered?</em></h1>
 
-    <h3><em>3</em> Questions</h3>
-    <h3><em>48</em> Photos</h3>
-    <h3><em>∞</em> Conversations</h3>
+    <div>
+      <h3><em>3</em> Questions</h3>
+      <h3><em>48</em> Photos</h3>
+      <h3><em>∞</em> Conversations</h3>
+    </div>
 
-    <button class="btn btn--primary" [routerLink]="['/photo']">
-      Get Started
-    </button>
+    <div class="routes">
+      <button *ngFor="let topic of topics; let i = index" class="routes__button" (click)="btnRoute(i)">
+        <ion-icon name="{{ topic.icon }}"></ion-icon>
+        {{ topic.name }}
+      </button>
+    </div>
   </div>
 </ion-content>

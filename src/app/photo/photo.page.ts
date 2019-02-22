@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService, PhotoService, QuestionService } from '../data.service';
-import { Photo, Question } from '../descriptions';
+import { Photo, Topic, Question } from '../descriptions';
 import n2w from 'number-to-words';
 
 @Component({
@@ -10,10 +10,11 @@ import n2w from 'number-to-words';
   styleUrls: ['./photo.page.scss'],
 })
 export class PhotoPage implements OnInit {
-  photos;
-  questions;
+  photos: Photo[];
+  questions: Question[];
   photo: Photo;
   photoId: number = 0;
+  topics: Topic[];
   question: Question;
   questionId: number = 0;
   n2wConverter = n2w;
@@ -45,14 +46,11 @@ export class PhotoPage implements OnInit {
   }
 
   getQuestions(): void {
-    this.questions = this.questionService.getQuestions();
+    this.topics = this.questionService.getQuestions();
+    this.questions = this.topics[this.data.routeId].questions;
     for(let i:number = 0; i < this.questions.length; i++) {
       this.data.userAnswers.push([]);
     }
-  }
-
-  btnOi(e) {
-    alert(e);
   }
 
   btnAdd() {

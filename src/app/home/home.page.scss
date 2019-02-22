@@ -1,6 +1,7 @@
 .foregroundCopy {
   background-color: rgba(0,0,0, 0.2);
   color: white;
+  justify-content: start;
 }
 
 h1 {
@@ -25,5 +26,33 @@ h3 {
     display: block;
     font-size: 50px;
     font-style: normal;
+  }
+}
+
+.routes {
+  background: rgba(255, 255, 255, 0.4);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+
+  &__button {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 9px;
+    font-weight: bold;
+    height: 76px;
+    margin: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 76px;
+
+    ion-icon {
+      display: block;
+      font-size: 40px;
+      margin: 0 auto 2px;
+    }
   }
 }
