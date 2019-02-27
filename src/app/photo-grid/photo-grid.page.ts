@@ -49,4 +49,9 @@ export class PhotoGridPage implements OnInit {
     this.router.navigate(['/photo'])
   }
 
+  preventOrphans(text) {
+    const lastWords = text.split(" ").splice(-2).join(" ");
+    return text.replace(lastWords, `<span class="nobr">${lastWords}</span>`);
+  }
+
 }

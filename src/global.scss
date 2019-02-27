@@ -32,10 +32,15 @@
   font-family: Raleway, sans-serif;
 }
 
+.nobr {
+  white-space: nowrap;
+}
+
 .btn {
   align-items: center;
   border-radius: 22px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  color: white;
   display: flex;
   font-weight: bold;
   height: 44px;
@@ -69,12 +74,13 @@
 
 
 .screenFooter {
-  z-index: 1;
-  position: fixed;
+  background: rgba(255, 255, 255, 0.75);
   bottom: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.4);
   padding: 4px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
 
   .icon {
     font-size: 26px;
@@ -96,13 +102,12 @@
     line-height: 24px;
     padding: 4px;
 
-    span {
+    &__direction {
       display: block;
       font-weight: normal;
     }
   }
 }
-
 
 .backgroundImgs {
   height: 100vh;

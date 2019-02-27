@@ -29,10 +29,11 @@
 }
 
 .photo__footer {
-  z-index: 1;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   background: rgba(255, 255, 255, 0.4);
+  bottom: 0;
   padding: 4px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
 }

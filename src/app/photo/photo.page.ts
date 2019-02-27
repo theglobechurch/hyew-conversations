@@ -83,4 +83,9 @@ export class PhotoPage implements OnInit {
     this.data.changePhoto(this.photoId);
   }
 
+  preventOrphans(text) {
+    const lastWords = text.split(" ").splice(-2).join(" ");
+    return text.replace(lastWords, `<span class="nobr">${lastWords}</span>`);
+  }
+
 }

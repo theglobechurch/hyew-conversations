@@ -12,8 +12,8 @@
 
   <div class="screenFooter">
     <div class="screenFooter__question">
-      {{ question.copy }}
-      <span>
+      <span [innerHTML]="preventOrphans(question.copy)"></span>
+      <span class="screenFooter__question__direction">
         Pick {{ n2wConverter.toWords(question.numberOfPhotos) }}
       </span>
     </div>
