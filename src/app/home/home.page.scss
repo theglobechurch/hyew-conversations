@@ -4,16 +4,26 @@
   justify-content: start;
 }
 
-h1 {
+.hyewTitle {
   border-bottom: 1px solid white;
-  padding: 0 50px 50px;
-  position: relative;
-  font-weight: bold;
+  max-width: 400px;
+  padding: 25px 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80%;
 
-  em {
-    display: block;
-    position: absolute;
-    right: 0;
+  &__logo {
+  }
+
+  &__copy {
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+
+    em {
+      display: block;
+      text-align: right;
+    }
   }
 }
 
@@ -30,24 +40,27 @@ h3 {
 }
 
 .routes {
-  background: rgba(255, 255, 255, 0.4);
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
+  padding: 5px 5px 15px;
   position: fixed;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  justify-items: center;
 
   &__button {
-    background-color: white;
     border-radius: 5px;
     font-size: 9px;
     font-weight: bold;
     height: 76px;
-    margin: 0 20px;
     text-align: center;
     text-transform: uppercase;
     width: 76px;
+
+    background-image: linear-gradient(-180deg, #A8E100 0%, #709405 100%);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    color: white;
 
     ion-icon {
       display: block;

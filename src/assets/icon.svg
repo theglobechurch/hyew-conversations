@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="90px" viewBox="0 0 137 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Bubbles</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="2.91415353%" y1="50%" x2="61.4226082%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#A9E200" offset="0%"></stop>
+            <stop stop-color="#3D5200" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="72.5077322%" y1="0%" x2="72.5077322%" y2="97.3485785%" id="linearGradient-2">
+            <stop stop-color="#A9E200" offset="0%"></stop>
+            <stop stop-color="#709405" offset="100%"></stop>
+        </linearGradient>
+        <path d="M-4.36723223e-14,57 L-2.13162821e-14,9 C-2.13162821e-14,4.02943725 4.02943725,1.32977772e-14 9,1.42108547e-14 L88.5084132,1.42108547e-14 C86.2521574,-7.51989482e-15 84.0782023,0.847459188 82.4172198,2.37449145 L23,57 L-4.35207426e-14,57 Z" id="path-3"></path>
+        <filter x="-5.1%" y="-7.0%" width="111.3%" height="117.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0.5" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="72.5077322%" y1="0%" x2="72.5077322%" y2="97.3485785%" id="linearGradient-5">
+            <stop stop-color="#A9E200" offset="0%"></stop>
+            <stop stop-color="#709405" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="2.91415353%" y1="50%" x2="61.4226082%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#8706FE" offset="0%"></stop>
+            <stop stop-color="#341253" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="72.5077322%" y1="0%" x2="72.5077322%" y2="97.3485785%" id="linearGradient-7">
+            <stop stop-color="#C084F8" offset="0%"></stop>
+            <stop stop-color="#8400FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Bubbles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Have-You-Ever-Wondered-Speech-Bubbles">
+            <path d="M30.5,-1.82076576e-14 L34.4915868,-2.13162821e-14 C36.7478426,-2.17307495e-14 38.9217977,0.847459188 40.5827802,2.37449145 L100,57 L32,57 C27.0294373,57 23,52.9705627 23,48 L23,7.5 C23,3.35786438 26.3578644,-1.78908488e-14 30.5,-1.86517468e-14 Z" id="Green-Back" fill="url(#linearGradient-1)" transform="translate(61.500000, 28.500000) scale(-1, 1) translate(-61.500000, -28.500000) "></path>
+            <g id="Shadow">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+            <path d="M23,57 L4.94005575,72.3116919 C4.39806615,72.7712048 3.71056658,73.023421 3,73.023421 C1.34314575,73.023421 -4.26325641e-14,71.6802752 -2.84217094e-14,70.023421 L0,9 C0,4.02943725 4.02943725,-9.13077564e-16 9,0 L88.5084132,0 C86.2521574,-2.17307495e-14 84.0782023,0.847459188 82.4172198,2.37449145 L23,57 Z" id="Green-Top" fill="url(#linearGradient-5)"></path>
+            <path d="M44.5,16 L48.4915868,16 C50.7478426,16 52.9217977,16.8474592 54.5827802,18.3744914 L114,73 L46,73 C41.0294373,73 37,68.9705627 37,64 L37,23.5 C37,19.3578644 40.3578644,16 44.5,16 Z" id="Purple-Back" fill="url(#linearGradient-6)"></path>
+            <path d="M48.4915868,16 L128,16 C132.970563,16 137,20.0294373 137,25 L137,86.023421 C137,87.6802752 135.656854,89.023421 134,89.023421 C133.289433,89.023421 132.601934,88.7712048 132.059944,88.3116919 L114,73 L54.5827802,18.3744914 C52.9217977,16.8474592 50.7478426,16 48.4915868,16 Z" id="Purple-Top" fill="url(#linearGradient-7)"></path>
+        </g>
+    </g>
+</svg>
