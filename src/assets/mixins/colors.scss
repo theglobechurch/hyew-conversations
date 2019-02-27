@@ -2,6 +2,9 @@ $greenLight: #a8e100;
 $greenDark: #709405;
 $purpleLight: #bf83f8;
 $purpleDark: #8400ff;
+$blueLight: #143d54;
+$blueDark: #082a3e;
+
 
 @mixin greenGradient {
   background-image: linear-gradient(-180deg, $greenLight 0%, $greenDark 100%);
@@ -9,4 +12,8 @@ $purpleDark: #8400ff;
 
 @mixin purpleGradient {
   background-image: linear-gradient(-180deg, $purpleLight 0%, $purpleDark 100%);
+}
+
+@mixin blueGradient {
+  background-image: linear-gradient(-180deg, $blueLight 0%, $blueDark 100%);
 }
