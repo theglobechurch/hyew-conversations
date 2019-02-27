@@ -1,6 +1,6 @@
 <ion-content>
 
-  <div class="photo__img" (swipeleft)="btnChange('previous')" (swiperight)="btnChange('next')">
+  <div class="photo__img" (swipeleft)="btnChange('next')" (swiperight)="btnChange('previous')">
     <img src="/assets/photos/{{ photo.filename }}" alt="{{ photo.alt }}" />
   </div>
 
