@@ -10,6 +10,8 @@
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
 
+@import 'assets/mixins/colors.scss';
+
 @font-face {
   font-family: 'raleway';
   src: url('/assets/font/raleway-bold-webfont.woff2') format('woff2'),
@@ -33,6 +35,7 @@
 .btn {
   align-items: center;
   border-radius: 22px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
   display: flex;
   font-weight: bold;
   height: 44px;
@@ -47,11 +50,11 @@
   }
   
   &--primary {
-    background-color: #cbdea2;
+    @include greenGradient();
   }
 
   &--secondary {
-    background-color: #a9a6de;
+    @include purpleGradient();
   }
 
   &--translucent {

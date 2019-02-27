@@ -24,7 +24,7 @@
       <button class="btn btn--secondary btn--round" (click)="btnChange('previous')">
         <ion-icon name="arrow-back"></ion-icon>
       </button>
-      <button class="btn btn--secondary" (click)="btnAdd()">
+      <button class="btn btn--primary" (click)="btnAdd()">
         <span *ngIf="data.userAnswers[questionId].indexOf(photoId) === -1">Add</span>
         <span *ngIf="data.userAnswers[questionId].indexOf(photoId) >= 0">Remove</span>
       </button>

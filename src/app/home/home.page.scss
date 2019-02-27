@@ -1,3 +1,5 @@
+@import '../../assets/mixins/colors.scss';
+
 .foregroundCopy {
   background-color: rgba(0,0,0, 0.2);
   color: white;
@@ -11,9 +13,6 @@
   text-align: center;
   text-transform: uppercase;
   width: 80%;
-
-  &__logo {
-  }
 
   &__copy {
     font-weight: bold;
@@ -41,26 +40,25 @@ h3 {
 
 .routes {
   bottom: 0;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   padding: 5px 5px 15px;
   position: fixed;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 5px;
-  justify-items: center;
 
   &__button {
+    @include greenGradient();
     border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    color: white;
     font-size: 9px;
     font-weight: bold;
     height: 76px;
     text-align: center;
     text-transform: uppercase;
     width: 76px;
-
-    background-image: linear-gradient(-180deg, #A8E100 0%, #709405 100%);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-    color: white;
 
     ion-icon {
       display: block;
