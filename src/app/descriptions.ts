@@ -11,7 +11,7 @@ export class Question {
 }
 
 export class FollowUp {
-  intro: string;
+  intro: string[];
   passage: Passage;
 }
 

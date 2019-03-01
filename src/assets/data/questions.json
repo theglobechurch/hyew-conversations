@@ -4,23 +4,26 @@
     "icon": "bulb",
     "questions": [
       {
-        "copy": "Which images represent what you think makes life worth living?",
+        "copy": "Choose three pictures that represent what makes life great",
         "discussion": "What is it in these images that makes life worth living?",
         "numberOfPhotos": 3
       },
       {
-        "copy": "What expresses your frustration or disappointment in life?",
+        "copy": "Choose two pictures that express what frustrates or disappoints you about life",
         "discussion": "Where are your frustrations and disappointments in each of these images?",
         "numberOfPhotos": 2
       },
       {
-        "copy": "What represents your purpose for life?",
+        "copy": "Choose two pictures that express what frustrates or disappoints you about life",
         "discussion": "Why this one image?",
         "numberOfPhotos": 1
       }
     ],
     "followup": {
-      "intro": "Here is one thing that Jesus said about life…",
+      "intro": [
+        "We all crave meaning and purpose. It can be a joyful journey, or it can be exhausting.",
+        "Look at these words from Jesus. What do you find appealing in his vision for life?"
+      ],
       "passage": {
         "text": "Come to me, all you who are weary and burdened, and I will give you rest.",
         "ref": "Matthew 11:28"
@@ -32,23 +35,26 @@
     "icon": "radio-button-off",
     "questions": [
       {
-        "copy": "Which images represent what you think about God?",
+        "copy": "Choose three pictures that represent what you think about God",
         "discussion": "What is about these three images that point you to hope?",
         "numberOfPhotos": 3
       },
       {
-        "copy": "What makes you doubt God?",
+        "copy": "Choose two pictures that make you doubt the reality of God",
         "discussion": "Where are your worries in each of these images?",
         "numberOfPhotos": 2
       },
       {
-        "copy": "Choose one image that makes you want to know God more…",
+        "copy": "Choose one picture that makes you want to know God more",
         "discussion": "Why this one image?",
         "numberOfPhotos": 1
       }
     ],
     "followup": {
-      "intro": "Christians believe that God reveals himself…",
+      "intro": [
+        "It can be frustrating to think about God. How can we ever know about him? How could we ever be sure?",
+        "Look at these words from the Bible. If this is true, what does it tell us about knowledge of God? "
+      ],
       "passage": {
         "text": "No one has ever seen God, but the one and only Son, who is himself God and is in closest relationship with the Father, has made him known.",
         "ref": "John 1:18"
@@ -60,23 +66,26 @@
     "icon": "finger-print",
     "questions": [
       {
-        "copy": "Which images represent you as a person?",
+        "copy": "Choose three pictures that sum up what is great about being human",
         "discussion": "Where do you see yourself in each of these images?",
         "numberOfPhotos": 3
       },
       {
-        "copy": "Which images represent your frustrations with yourself?",
-        "discussion": "What is it about these three images?",
+        "copy": "Choose two pictures that express what frustrates you about being human",
+        "discussion": "What is it about these two images?",
         "numberOfPhotos": 2
       },
       {
-        "copy": "What's your hope for your future?",
+        "copy": "Choose one picture that expresses how you feel about your identity",
         "discussion": "Why this one image?",
         "numberOfPhotos": 1
       }
     ],
     "followup": {
-      "intro": "Being created makes a massive difference to our sense of identity…",
+      "intro": [
+        "Does our value come from our performance or from some intrinsic value? Where does that value come from?",
+        "Look at these words from the Bible. If this is true, what difference would it make to our sense of worth?"
+      ],
       "passage": {
         "text": "So God created mankind in his own image, in the image of God he created them; male and female he created them.",
         "ref": "Genesis 1:27"

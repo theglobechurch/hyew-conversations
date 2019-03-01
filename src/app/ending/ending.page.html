@@ -6,7 +6,8 @@
   <div class="foregroundCopy">
     <h2>What next?</h2>
 
-    <p>{{ followup.intro }}</p>
+    <p *ngFor="let p of followup.intro">{{ p }}</p>
+
     <blockquote>
       {{ followup.passage.text }}
     </blockquote>
