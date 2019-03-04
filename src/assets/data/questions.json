@@ -14,7 +14,7 @@
         "numberOfPhotos": 2
       },
       {
-        "copy": "Choose two pictures that express what frustrates or disappoints you about life",
+        "copy": "Choose one picture that expresses what you would love your life to be",
         "discussion": "Why this one image?",
         "numberOfPhotos": 1
       }
@@ -36,12 +36,12 @@
     "questions": [
       {
         "copy": "Choose three pictures that represent what you think about God",
-        "discussion": "What is about these three images that point you to hope?",
+        "discussion": "Where do you see God in each of these images?",
         "numberOfPhotos": 3
       },
       {
         "copy": "Choose two pictures that make you doubt the reality of God",
-        "discussion": "Where are your worries in each of these images?",
+        "discussion": "Why do the content of these images make you doubt God?",
         "numberOfPhotos": 2
       },
       {
@@ -53,7 +53,7 @@
     "followup": {
       "intro": [
         "It can be frustrating to think about God. How can we ever know about him? How could we ever be sure?",
-        "Look at these words from the Bible. If this is true, what does it tell us about knowledge of God? "
+        "Look at these words from the Bible. If this is true, what does it tell us about knowledge of God?"
       ],
       "passage": {
         "text": "No one has ever seen God, but the one and only Son, who is himself God and is in closest relationship with the Father, has made him known.",
